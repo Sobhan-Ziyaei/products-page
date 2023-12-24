@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products page</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header class="header">Products-page</header>
     <main>
         <div id="serach">
             <input placeholder="Search name" id="search-input" type="text">
             <div>
-                <button class="filter">All</button>
-                <button class="filter">Tech</button>
-                <button class="filter">Clothing</button>
-                <button class="filter">Health</button>
+                <button class="filter" data-filter="All">All</button>
+                <button class="filter" data-filter="Tech">Tech</button>
+                <button class="filter" data-filter="Clothing">Clothing</button>
+                <button class="filter" data-filter="Health">Health</button>
             </div>
             <div>
                 <input placeholder="Search price" type="number">
@@ -24,47 +26,47 @@
         </div>
 
         <div id="products">
-            <div class="product-item">
+            <div class="product-item" data-category = "Tech">
                 <img src="../img/iphone.png">
                 <p>Apple iphone 14 pro</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Tech">
                 <img src="../img/airpods.png">
                 <p>airpods</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Clothing">
                 <img src="../img/bag.png">
                 <p>bag</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Health">
                 <img src="../img/cream.png">
                 <p>cream</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Clothing">
                 <img src="../img/jacket.png">
                 <p>jacket</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Health">
                 <img src="../img/shampoo.png">
                 <p>shampoo</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Clothing">
                 <img src="../img/shoes.png">
                 <p>shoes</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Health">
                 <img src="../img/vitamin.png">
                 <p>vitamin</p>
                 <span>$ 1499</span>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-category = "Tech">
                 <img src="../img/watch.png">
                 <p>watch</p>
                 <span>$ 1499</span>
@@ -74,4 +76,5 @@
 
     <script src="../js/script.js"></script>
 </body>
+
 </html>
